@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+     <link rel = "icon" href = "../Sources/pageIcon.png">
+	<head>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.190.0/aws-sdk.min.js" type="application/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/aws-cognito-sdk.min.js" type="application/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/amazon-cognito-identity.min.js" type="application/javascript"></script>
+	</head>
+     <link rel="stylesheet" type="text/css" href="../Scripts/style.css">
+	<img src = "../Sources/picnicbasket_2.png" alt "Logo" style="width:500px;height:200px">
+    <h1>Home</h1>
+    <body>
+         <div class="navigationDiv">
+                <button onclick="changePage('index.html')">Home</button>
+                <button onclick="changePage('storeselection.html')">Shop</button>
+                <button onclick="logout()"style="float: right;">Logout</button>
+                <button onclick="changePage('contactUs.html')">Contact Us</button>
+                <button onclick="changePage('administrative.html')">Admin (temp)</button>
+                <button onclick="changePage('checkout.html')"style="float: right;">Cart</button>
+                <button onclick="changePage('userProfile.html')" style="float: right;">My Profile</button>
+                
+        </div>
+		<div class="createAccountDiv" style="display: none;">
+			<h2>Create Account</h2>
+            <form id="createAccountForm" action="">
+                    Username: <input type="text" id="formUN"><br>
+                    Email: <input type="text" id="formEM"><br>
+                    Password: <input type="password" id="formPW"><br>
+            </form>
+			<button onclick="createAccount()">Create Account</button>
+            <h2>Or Sign In</h2>
+            <form id = "signInForm" action = "">
+                    Username: <input type = "text" id = "loginUsername"><br>
+                    Password: <input type = "password" id = "loginPassword"><br>
+            </form>
+            <button onclick="performLogin()">Sign In</button>
+        </div>
+       
+        
+		<div class="logoutDiv" id = "logoutDiv" style="display: none;">   
+			<h2 id = "usernameDiv">Welcome, ####.</h2>
+            <h3>Driver of the Week</h3>
+            <img src = "../Sources/driver.jpg" width = "350px" height = "215px">
+            <p>Thank you, Elizabeth, Salt Lake City, for your hard work.</p>
+            <h3>The BudgetBox Delivery Service</h3>
+            <p>
+            Welcome to the official BudgetBox website, where you can order what you need, from whever you want. Whether you need groceries for the week, or a meal on a lazy sunday, we deliver it to your home. 
+            </p>
+            <button  onclick="changePage('storeselection.html')">Click here to Begin Shopping</button>
+            
+            <h3>The BudgetBox Motto</h3>
+            <p>
+            Here at BudgetBox, we realize the importance of our customers needs. We don't discriminate if you want one iem or one hundred. If you order it, we'll figure out a way to deliver it to you. Our motto is "Feelin' Lazy? We Gotchu", and we mean it. With our various partnerships with companies all around the United States, including Wal-Mart, McDonald's, KFC, Target, Maverik, and many more, we have all of your bases covered.  
+            <br>
+            So, visit our site, download our app, and follow us on social media. We care about you and your money. And, if you need to make money to use our services, why not apply to become one of our drivers.
+            <br>
+            <br>
+            Thank you,
+            <br>
+            <br>
+            Trevor Waters (CEO, BudgetBox Corp.)
+            
+        </div>
+        <div class = "bottomDiv" id = "bottomDiv">
+            <hr size = "3" color = "steelblue">
+            <a href="index.html">
+                <img src = "../Sources/picnicbasket_2.png" alt "Logo" style="width:500px;height:200px">
+            </a>
+            <br>
+            
+            Copyright (2018).
+            <br>
+            BudgetBox Corp.
+            <br>
+            Site Design by: Trevor Waters (2018)
+        </div>
+        
+            <script src="../Scripts/script.js"></script>
+    </body>
+</html>
