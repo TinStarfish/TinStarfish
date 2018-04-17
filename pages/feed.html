@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GamerSpace</title>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="icon" href="../sources/GameSpaceIcon.png">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.190.0/aws-sdk.min.js" type="application/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/aws-cognito-sdk.min.js" type="application/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/amazon-cognito-identity.min.js" type="application/javascript"></script>
+    
+    </head>
+   
+   
+    <div class = "navigationDiv">
+        <div class = "rightAlign">
+            <a href = "../pages/feed.html" ><img id = "banner" src = "../sources/Gamerspace.png" class = "wrapper" height = 32 text-align = center></a>
+            <a href = "../pages/profile.html"><img id = "notification" src = "../sources/notification.png" height = 32 width = 32></a>
+            <a href = "../pages/profile.html"><img id = "topProfilePic" src = "../sources/profPic_TinStarfish.jpg" height = 32 width = 32></a>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+    <div class = "leftDiv">
+        <label id = "userLevel">User Level: </label>
+        <br>
+        <img id = "leftProfilePic" src = "../sources/profPic_TinStarfish.jpg" width = 64 height = 64>
+        <br>
+        <label id = "userName">Username:</label>
+        <br>
+        <label id = "userName_2">Secondary Username:</label>
+        <br>
+        <br>
+        <button class = "btn" onclick="changePage('profile.html')">My Profile</button>
+    
+    </div>
+    
+    <div class = "middleDiv" id = "middleDiv">
+        <img id = "createPostProfilePic"  src = "../sources/profPic_TinStarfish.jpg" width = 32px height = 32px>
+    
+        <a href="profile.html">@<b>TinStarfish</b></a>
+        <br>
+        <br>
+        <label>What's on your mind?</label>
+        <br>
+        <textarea id = "postInput" maxLenth = "300"></textarea>
+        <br>
+        <input type = file id = "uploadFile" accept="image/*">
+        <div class = "rightAlign">
+        <button class = "btn" onclick = "createPost()">Post</button>
+        </div>
+        <hr>
+
+        
+    </div>
+
+    <div class = "rightDiv">
+    
+    
+    
+    </div>
+    <div class = "rightDiv">
+        <label>ADVERTISEMENT</label>
+        <p style="width : 20px">Disable Adblock</p>
+        <hr>
+        <label>ADVERTISEMENT</label>
+        <p style="width : 20px">Disable Adblock</p>
+    
+    
+    
+    </div>
+    <div>
+        <script src="../scripts/script_feed.js"></script>
+        <script src="../scripts/script_master.js"></script>
+        
+        
+    
+    
+    </div>
+
+
+</html>

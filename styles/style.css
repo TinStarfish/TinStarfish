@@ -1,0 +1,145 @@
+body {
+background-color : #F0F4F1;
+color : black;
+text-align: justify;
+padding : 1%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+text-align : left;
+    
+}
+
+.leftDiv {   
+    float: left;
+    width: 20%;
+    font-size : 16px;
+    background-color : #95BCA7;
+    padding : 1%;
+    border-width : 1px;
+    border-style : solid;
+    border-color : #558F6E;
+    margin-right: 1%;
+    position: -webkit-sticky;
+    position: sticky;
+    top 0;
+    
+    
+}
+
+.middleDiv {
+    float: left;
+    background-color : #95BCA7;
+    width : 50%;
+    height : 500px;
+    padding : 2%;
+    border-width : 1px;
+    border-style : solid;
+    border-color : #558F6E;
+    
+    
+    
+}
+
+.rightDiv {
+    float: left;
+    margin-left: 1%;
+     border-width : 1px;
+    border-style : solid;
+    border-color : #558F6E;
+    
+}
+
+
+
+.bottomDiv {
+    float : none;
+    
+    
+}
+
+.postDiv {
+    
+    
+    
+}
+
+.aboutMeDiv {
+    float : left;
+    padding : 1%;
+    margin-left : 5px;
+    width : 20%;
+    background-color : #95BCA7;
+    
+    
+}
+
+.wrapper {
+    text-align: center;
+    
+}
+
+.rightAlign {
+    text-align: right;
+    
+    
+    
+}
+.btn {
+  background: #C7DBD0;
+  -webkit-box-shadow: 0px 1px 3px #FFF;
+  -moz-box-shadow: 0px 1px 3px black;
+  box-shadow: 0px 1px 3px black;
+  color: #000;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #558F6E;
+  text-decoration: none;
+}
+
+#postInput {
+    width : 98%;
+    height : 64px;
+    padding : 1%;
+    
+}
+
+#commentInput {
+    width : 95%;
+    height : 40px;
+    padding : 1%;
+    
+}
+
+#searchInput {
+    width 3px;
+    height : 15px;
+    
+    
+}
+
+
+.welcomeDiv {
+    background-color : #C7DBD0;
+    padding : 1%;
+    margin : 1px;
+    
+    
+}
+
+.navigationDiv {
+    text-align: center;
+    background-color: #558F6E;
+    padding : .5%;
+    margin-top : -2%;
+    margin-left : -2%;
+    margin-right : -2%;
+    margin-bottom: 1%;
+    position : sticky;
+    top : auto;
+    
+    
+    
+}

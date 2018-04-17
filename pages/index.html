@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="icon" href="../sources/GameSpaceIcon.png">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.190.0/aws-sdk.min.js" type="application/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/aws-cognito-sdk.min.js" type="application/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/amazon-cognito-identity-js@1.31.0/dist/amazon-cognito-identity.min.js" type="application/javascript"></script>
+     
+      
+    </head>
+     <div class = "wrapper"> <img src = "../sources/Gamerspace.png" width = 500px height = 150px></div>
+    <div class = "navigationDiv">
+       
+    </div>
+
+    <div class = "welcomeDiv">
+    <h2>Welcome!</h2>
+    <p>
+        Welcome to GamerSpace! This is a website by and for gamers. Whether you play Console, PC, Tabletop, or all of the above, all gamers are welcome! Here you can share your achievements, secrets, or just hang out. Choose your own adventure! Visit the forums if you need help with a game, or if you are interested in any of the topics provided. 
+        </p>
+
+    </div>
+   
+       <div class = "leftDiv">   
+        <h3>Community Guidelines</h3>
+        <Label>Like most communities, we have guidelines and expectations when you join.</Label>
+        <button class = "btn" >View our Community Guidelines Here.</button>
+    
+    
+    </div>
+    <div class = "middleDiv">
+        <div class = "signUpDiv">
+            <h3>Sign Up</h3>
+                <form>
+                    <label>Username:</label>
+                    <br>
+                    <input id = "signUpUsername">
+                    <br>
+
+                    <label>Email:</label>
+                    <br>
+                    <input id = "signUpEmail">
+                    <br>
+
+                    <label>Password:</label>
+                    <br>
+                    <input id = "signUpPassword" type=password>
+                    <br>
+
+                    <label>Confirm Password:</label>
+                    <br>
+                    <input id = "signUpPasswordConfirm" type=password>
+                    <br>
+
+                    <br>
+                    
+                     </form>
+                    <button class = "btn" onclick = "createAccount()">Sign Up</button>
+                    <br>
+
+                    <br>
+                   
+               
+             <button class = "btn" onclick = "toggleSignIn(false)">Already have an account? Sign in Here.</button>
+         </div>
+
+    <div class = "signInDiv">
+        <h3>Sign In</h3>
+        <label>Username:</label>
+        <br>
+        <input id = "signInUsername">
+        <br>
+        
+        <label>Password:</label>
+        <br> 
+        <input id = "signInPassword" type=password>
+        <br>
+        <br>
+       
+
+        <input type = "checkbox">
+         <label>Remember Me</label>
+        <br>
+        <br>
+        <button class = "btn" onclick="performLogin()">Sign In</button>
+        <br>
+        <br>
+        <button class = "btn"  onclick = "toggleSignIn(true)">Don't have an account? Sign up Here.</button>
+    
+    </div>
+    </div>
+    <div class = "bottomDiv">
+
+        
+    </div>
+        
+    
+    <div>
+          <script src="../scripts/script_master.js"></script>
+        <script src="../scripts/script_home.js"></script>
+   
+    </div>
+    
+</html>
