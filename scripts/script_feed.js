@@ -2,6 +2,7 @@ var divHeightToAdd = 500;
 var postLength = 500;
 var defaultImageWidth = 128;
 var allPosts = [];
+var temp;
 
 
 function main() {
